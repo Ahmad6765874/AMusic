@@ -107,8 +107,10 @@ if CHANNEL_LINK:
     if not re.match("(?:http|https)://", CHANNEL_LINK):
         raise SystemExit(
             "[ERROR] - Your CHANNEL_LINK url is wrong. Please ensure that it starts with https://"
-)if SUPPORT_CHAT:
+        )
+
+if SUPPORT_CHAT:
     if not re.match("(?:http|https)://", SUPPORT_CHAT):
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHAT url is wrong. Please ensure that it starts with https://"
-        )
+)
